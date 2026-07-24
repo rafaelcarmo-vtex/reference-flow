@@ -147,6 +147,19 @@ body{
 }
 
 /* =================================================================
+   AGENDA — two-column intro cards
+   ================================================================= */
+.agenda{display:grid;grid-template-columns:repeat(2,1fr);gap:60px;margin-top:32px;flex:1;align-content:center}
+.agenda__item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:32px;
+  opacity:0;animation:journeyFade .5s var(--ease) both}
+.agenda__num{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;
+  font-family:var(--display);font-size:20px;font-weight:700;color:#fff;margin-bottom:20px}
+.agenda__num--pink{background:var(--pink)}
+.agenda__num--ink{background:var(--ink)}
+.agenda__item h3{font-size:20px;font-weight:700;color:var(--ink);margin-bottom:4px;line-height:1.25}
+.agenda__item p{font-size:15px;color:var(--grey);line-height:1.5}
+
+/* =================================================================
    SLIDE 2 — two column
    ================================================================= */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:36px;flex:1;margin-top:22px}
@@ -212,7 +225,7 @@ body{
 .context-list li::before{content:"→";position:absolute;left:0;color:var(--amr);font-weight:700}
 .context-list strong{color:var(--ink);font-weight:700}
 
-.demo-cue{margin:auto;text-align:center;max-width:760px}
+.demo-cue{margin:auto;text-align:center;max-width:780px}
 .demo-cue__title{font-size:46px}
 .demo-cue__title em{color:var(--pink);font-style:normal}
 .demo-cue__note{margin-top:18px;color:var(--grey);font-size:16px}
@@ -268,7 +281,8 @@ body{
 .premises__num--ink{background:var(--ink)}
 .premises__num--mint{background:var(--mint)}
 .premises h3{font-size:18px;font-weight:700;color:var(--ink);margin-bottom:6px}
-.premises p{font-size:14px;color:var(--grey-d);line-height:1.5}
+.premises p{font-size:14px;color:var(--grey);line-height:1.5}
+.premises p strong{color:var(--pink);font-weight:400}
 
 /* =================================================================
    SLIDE 5 — steps
@@ -294,6 +308,49 @@ body{
   display:grid;place-items:center;font-size:20px;color:#fff}
 .hero-strip p{color:#C9C9D6;font-size:14px;line-height:1.4}
 .hero-strip strong{color:#fff}
+
+/* =================================================================
+   PRINCÍPIOS — paginated card
+   ================================================================= */
+.principles-pager{display:flex;flex-direction:column;flex:1;margin-top:24px;min-height:0}
+.principles-pager__viewport{display:flex;align-items:stretch;gap:20px;flex:1;min-height:0}
+.principles-pager__stage{position:relative;flex:1;min-height:0}
+
+.principle-card{position:absolute;inset:0;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:36px 44px;display:none;flex-direction:column;justify-content:center;overflow:auto}
+.principle-card.is-active{display:flex;animation:journeyFade .4s var(--ease) both}
+.principle-card .col-label{margin-bottom:14px}
+
+.principle-card--hero h3{font-family:var(--display);font-size:22px;font-weight:700;color:var(--ink);line-height:1.25;margin-bottom:24px}
+.principle-card--hero .resp-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.resp-block ul{list-style:none;display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.resp-block li{position:relative;padding-left:14px;font-size:13px;color:var(--grey-d);line-height:1.4}
+.resp-block li::before{content:"–";position:absolute;left:0;color:var(--grey)}
+.resp-tag{display:inline-block;font-family:'DM Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.08em;
+  text-transform:uppercase;padding:4px 10px;border-radius:20px;color:#fff}
+.resp-tag--ink{background:var(--ink)}
+.resp-tag--pink{background:var(--pink)}
+
+.principle-card__text{font-family:var(--display);font-size:28px;font-weight:600;color:var(--ink);
+  line-height:1.35;letter-spacing:-.01em;max-width:820px}
+
+.principle-flow{display:flex;align-items:center;gap:18px;margin-top:26px;flex-wrap:wrap}
+.principle-flow__chip{background:var(--cloud);border:1px solid var(--line);border-radius:12px;
+  padding:14px 20px;font-family:var(--display);font-weight:700;font-size:16px;color:var(--ink)}
+.principle-flow__arrow{color:var(--pink);font-size:22px;font-weight:700}
+
+.principles-pager__arrow{flex:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+  background:var(--card);color:var(--ink);font-size:20px;cursor:pointer;align-self:center;
+  display:grid;place-items:center;transition:background .15s var(--ease),color .15s var(--ease),transform .15s var(--ease)}
+.principles-pager__arrow:hover:not(:disabled){background:var(--pink);color:#fff;border-color:var(--pink)}
+.principles-pager__arrow:active:not(:disabled){transform:scale(.92)}
+.principles-pager__arrow:disabled{opacity:.3;cursor:default}
+
+.principles-pager__dots{display:flex;justify-content:center;gap:8px;margin-top:20px}
+.principles-pager__dot{width:8px;height:8px;border-radius:50%;border:none;background:var(--line);
+  cursor:pointer;padding:0;transition:background .2s var(--ease),width .2s var(--ease)}
+.principles-pager__dot:hover{background:var(--grey)}
+.principles-pager__dot.is-active{background:var(--pink);width:22px;border-radius:5px}
 
 /* =================================================================
    SLIDE 8 — pillars

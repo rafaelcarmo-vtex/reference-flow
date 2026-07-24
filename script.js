@@ -83,6 +83,25 @@
     x0=null;
   },{passive:true});
 
+  // ---- inline pagers (e.g. "Princípios" slide) ----
+  document.querySelectorAll('.principles-pager').forEach(pager=>{
+    const cards   = Array.from(pager.querySelectorAll('.principle-card'));
+    const dots    = Array.from(pager.querySelectorAll('.principles-pager__dot'));
+    const pPrev   = pager.querySelector('.principles-pager__arrow--prev');
+    const pNext   = pager.querySelector('.principles-pager__arrow--next');
+    let pIndex = 0;
+    function renderPager(){
+      cards.forEach((c,n)=>c.classList.toggle('is-active', n===pIndex));
+      dots.forEach((d,n)=>d.classList.toggle('is-active', n===pIndex));
+      pPrev.disabled = pIndex===0;
+      pNext.disabled = pIndex===cards.length-1;
+    }
+    pPrev.addEventListener('click', ()=>{ if(pIndex>0){ pIndex--; renderPager(); } });
+    pNext.addEventListener('click', ()=>{ if(pIndex<cards.length-1){ pIndex++; renderPager(); } });
+    dots.forEach((d,n)=>d.addEventListener('click', ()=>{ pIndex=n; renderPager(); }));
+    renderPager();
+  });
+
   // ---- deep-link via #hash (e.g. #4) ----
   const fromHash = parseInt(location.hash.replace('#',''),10);
   show(Number.isFinite(fromHash) ? fromHash-1 : 0);
