@@ -65,10 +65,7 @@
           </li>
         </ul>
         <div class="brand-mark">
-          <div class="brand-chip brand-chip--solo">
-            <img class="brand-chip__svg" src="public/logo-americanas.svg" alt="Americanas">
-          </div>
-          <div class="brand-mark__shadow" aria-hidden="true"></div>
+          <img class="brand-mark__bag" src="public/sacola.png" alt="Sacola de compras">
         </div>
       </div>
     </div>
@@ -334,41 +331,68 @@
     <footer class="foot foot--dark"><span></span><span class="foot__num">11</span></footer>
   </section>
 
-  <!-- ============ SLIDE 12 — TEMPO ESPERADO ============ -->
+  <!-- ============ SLIDE 12 — PERGUNTAS EM ABERTO ============ -->
   <section class="slide slide--dark" data-slide="12">
     <div class="slide__inner">
-      <p class="eyebrow eyebrow--pink">11 · Tempo esperado</p>
-      <h2 class="display display--light">Até 75% menos tempo por atendimento.</h2>
-      <div class="versus">
-        <div class="way way--old">
-          <p class="way__label">Antes</p>
-          <h3 class="way__title way__title--stat">8–12 min por cliente</h3>
-          <img class="way__img" src="public/raiva.png" alt="Cliente frustrado na fila">
-          <p class="way__foot">Fila, espera no caixa, operação manual.</p>
+      <p class="eyebrow eyebrow--pink">11 · Perguntas em aberto</p>
+      <h2 class="display display--light">Para discutir.</h2>
+      <div class="open-questions">
+        <div class="open-q" style="animation-delay:0ms">
+          <div class="open-q__head">
+            <span class="next-steps__num next-steps__num--pink">1</span>
+            <h3>Flexibilidade de Layout por etapa</h3>
+          </div>
+          <p>A flexibilidade de layout existente no FastStore será permitida na venda assistida? Ou seja, vamos permitir que clientes customizem a ordem de steps e visual?</p>
+          <ul class="open-q__proposta">
+            <li><strong>Proposta:</strong> Sim, mas sob guidelines — não é e-commerce “do cliente”, é jornada controlada. Visual sim (design tokens), ordem de steps parcialmente, depende do caso de uso, objetivo e arquitetura.</li>
+          </ul>
         </div>
-        <div class="versus__arrow" aria-hidden="true">→</div>
-        <div class="way way--new">
-          <p class="way__label way__label--pink">Depois</p>
-          <h3 class="way__title way__title--stat">2–3 min por cliente</h3>
-          <img class="way__img" src="public/feliz.png" alt="Cliente satisfeito com o atendimento">
-          <p class="way__foot way__foot--mint">Jornada estruturada, sem re-trabalho.</p>
+        <div class="open-q" style="animation-delay:120ms">
+          <div class="open-q__head">
+            <span class="next-steps__num next-steps__num--pink">2</span>
+            <h3>Guidelines de jornada</h3>
+          </div>
+          <p>Qual o modelo certo para informar as jornadas? São guidelines, receitas ou componentes?</p>
         </div>
       </div>
     </div>
     <footer class="foot foot--dark"><span></span><span class="foot__num">12</span></footer>
   </section>
 
-  <!-- ============ SLIDE 13 — A APOSTA ============ -->
-  <section class="slide slide--dark slide--closer" data-slide="13">
-    <div class="gen-field gen-field--left" aria-hidden="true"></div>
-    <div class="slide__inner slide__inner--right">
-      <p class="eyebrow eyebrow--pink">12 · A aposta</p>
-      <h2 class="display display--light closer-title">A Caixa Móvel hoje. Qualquer jornada assistida amanhã — em minutos.</h2>
-      <p class="body body--light">Na mesma esteira do FastStore. Sem código. Com a marca do cliente.</p>
-      <div class="ask">
-        <p class="anchor anchor--inline">Designer projeta <em>regras</em>, não telas.</p>
-        <p class="ask__text">O que pedimos: buy-in na visão para levar o Reference Flow do discovery ao primeiro protótipo real — começando pela Caixa Móvel.</p>
-      </div>
+  <!-- ============ SLIDE 13 — PRÓXIMOS PASSOS ============ -->
+  <section class="slide slide--dark" data-slide="13">
+    <div class="gen-field" aria-hidden="true"></div>
+    <div class="slide__inner">
+      <p class="eyebrow eyebrow--pink">12 · Próximos Passos</p>
+      <h2 class="display display--light">O que vem a seguir.</h2>
+      <ol class="next-steps">
+        <li class="next-steps__item" style="animation-delay:0ms">
+          <div class="next-steps__head">
+            <span class="next-steps__num next-steps__num--pink">1</span>
+            <h3>Testes de jornadas + constraints para esse use case</h3>
+          </div>
+          <label class="next-steps__check"><span class="next-steps__box"></span>Testar guidelines de jornada: quais steps são obrigatórios? Ordem fixa?</label>
+        </li>
+        <li class="next-steps__item" style="animation-delay:90ms">
+          <div class="next-steps__head">
+            <span class="next-steps__num next-steps__num--pink">2</span>
+            <h3>Levantamento de diff entre FastStore + Assisted Sales</h3>
+          </div>
+          <label class="next-steps__check"><span class="next-steps__box"></span>Identificar gaps técnicos: está faltando algum componente não mapeado?</label>
+        </li>
+        <li class="next-steps__item" style="animation-delay:180ms">
+          <div class="next-steps__head">
+            <span class="next-steps__num next-steps__num--pink">3</span>
+            <h3>Desenvolvimento de primitivos</h3>
+          </div>
+        </li>
+        <li class="next-steps__item" style="animation-delay:270ms">
+          <div class="next-steps__head">
+            <span class="next-steps__num next-steps__num--pink">4</span>
+            <h3>Definição de offline junto à FastStore AI Native</h3>
+          </div>
+        </li>
+      </ol>
     </div>
     <footer class="foot foot--dark"><span></span><span class="foot__num">13</span></footer>
   </section>
