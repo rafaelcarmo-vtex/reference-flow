@@ -30,17 +30,17 @@
       <h2 class="display">Caso de uso: Americanas</h2>
       <div class="case-body">
         <ul class="fact-list">
-          <li class="fact-list__item">
+          <li class="fact-list__item" style="animation-delay:0ms">
             <span class="fact-list__text"><span class="fact-list__label">Setor</span><span class="fact-list__value">Varejo multicategoria de alto volume</span></span>
           </li>
-          <li class="fact-list__item">
+          <li class="fact-list__item" style="animation-delay:90ms">
             <span class="fact-list__text"><span class="fact-list__label">Canal</span><span class="fact-list__value">Loja física + Ecommerce (B2C)</span></span>
           </li>
-          <li class="fact-list__item">
+          <li class="fact-list__item" style="animation-delay:180ms">
             <span class="fact-list__text"><span class="fact-list__label">Porte</span><span class="fact-list__value">Alto volume · Grande rede</span></span>
           </li>
-          <li class="fact-list__item">
-            <span class="fact-list__text"><span class="fact-list__label">Cliente VTEX</span><span class="fact-list__value">Tier 0</span></span>
+          <li class="fact-list__item" style="animation-delay:270ms">
+            <span class="fact-list__text"><span class="fact-list__label">Cliente VTEX</span><span class="fact-list__value">Enterprise · Tier 0</span></span>
           </li>
         </ul>
         <div class="brand-mark">
@@ -63,10 +63,10 @@
         <div class="col">
           <p class="col-label">Contexto</p>
           <ul class="context-list">
-            <li><strong>Problema operacional:</strong><br>Filas longas nas lojas físicas em períodos de pico</li>
-            <li><strong>Insuficiência do modelo:</strong><br>Caixas tradicionais + PDV de balcão não absorvem o volume</li>
-            <li><strong>Impacto:</strong><br>Abandono de carrinho, frustração de cliente, perda de ticket médio</li>
-            <li><strong>Frequência:</strong><br>Páscoa, Black Friday, datas sazonais — acontece ao menos 4x/ano</li>
+            <li style="animation-delay:0ms"><strong>Problema operacional:</strong><br>Filas longas nas lojas físicas em períodos de pico</li>
+            <li style="animation-delay:90ms"><strong>Insuficiência do modelo:</strong><br>Caixas tradicionais + PDV de balcão não absorvem o volume</li>
+            <li style="animation-delay:180ms"><strong>Impacto:</strong><br>Abandono de carrinho, frustração, perda de ticket médio</li>
+            <li style="animation-delay:270ms"><strong>Frequência:</strong><br>Páscoa, Black Friday, datas sazonais — ao menos 4x/ano</li>
           </ul>
         </div>
         <img class="problem-image" src="public/problema.png" alt="Fila cheia no caixa da loja física">
@@ -84,11 +84,10 @@
         <div class="col">
           <p class="col-label">Contexto</p>
           <ul class="context-list">
-            <li><strong>Operador em movimento:</strong><br>(tablet/mobile) busca produtos no catálogo, mostra ao cliente</li>
-            <li><strong>Alternativa:</strong><br>Cliente auto-registra pedido em quiosque/tela maior</li>
-            <li><strong>Pagamento integrado:</strong><br>Pix, cartão, múltiplas formas</li>
-            <li><strong>Nota fiscal eletrônica:</strong><br>Gerada automaticamente, integrada a ERP/PDV</li>
-            <li><strong>Go-live rápido:</strong><br>Semanas, não meses — para testar antes de evento de pico</li>
+            <li style="animation-delay:0ms"><strong>Operador em movimento:</strong><br>(tablet/mobile) busca produtos no catálogo, mostra ao cliente</li>
+            <li style="animation-delay:90ms"><strong>Alternativa:</strong><br>Cliente auto-registra pedido em tablet/tela touch</li>
+            <li style="animation-delay:180ms"><strong>Pagamento integrado:</strong><br>Pix, cartão, múltiplas formas</li>
+            <li style="animation-delay:270ms"><strong>Nota fiscal:</strong><br>Gerada automaticamente, integrada a ERP/PDV</li>
           </ul>
         </div>
         <img class="problem-image" src="public/solucao.png" alt="Vendedor fecha a venda pelo Sales App, no celular">
@@ -97,37 +96,34 @@
     <footer class="foot"><span>AI Native para Venda Assistida</span><span class="foot__num">04</span></footer>
   </section>
 
-  <!-- ============ SLIDE 5 — COMO FUNCIONA ============ -->
+  <!-- ============ SLIDE 5 — PREMISSAS DA JORNADA DE VENDA ASSISTIDA ============ -->
   <section class="slide slide--light" data-slide="5">
     <div class="slide__inner">
-      <p class="eyebrow eyebrow--pink">04 · Como funciona</p>
-      <h2 class="display">Da necessidade de negócio à jornada publicada.</h2>
-      <div class="steps">
-        <div class="step">
-          <span class="step__num step__num--pink">1</span>
-          <h3>Americanas descreve</h3>
-          <p class="step__quote">“Preciso tirar o shopper da fila e fechar a venda no celular.”</p>
-          <p class="step__meta">Linguagem natural, no editor visual.</p>
-        </div>
-        <div class="step__arrow" aria-hidden="true">→</div>
-        <div class="step">
-          <span class="step__num step__num--ink">2</span>
-          <h3>O agente consulta o Reference Flow</h3>
-          <p class="step__quote">As regras da venda assistida: etapas, estados, condições, módulos.</p>
-          <p class="step__meta">O conhecimento que impede a IA de errar.</p>
-        </div>
-        <div class="step__arrow" aria-hidden="true">→</div>
-        <div class="step">
-          <span class="step__num step__num--mint">3</span>
-          <h3>Devolve um plano justificado</h3>
-          <p class="step__quote">Jornada mínima da Caixa Móvel, mandatório × opcional, onbrand.</p>
-          <p class="step__meta">Americanas ajusta e publica.</p>
-        </div>
-      </div>
-      <div class="hero-strip">
-        <div class="hero-strip__icon">★</div>
-        <p><strong>O Reference Flow é o herói invisível.</strong><br> É a regra que garante que a IA nunca esqueça um estado de loading, nem pule a nota fiscal, nem gere uma tela a mais do que a Caixa Móvel precisa.</p>
-      </div>
+      <p class="eyebrow eyebrow--pink">04 · Premissas da Jornada de Venda Assistida</p>
+      <h2 class="display">Antes de ir para o protótipo, vamos alinhar as premissas.</h2>
+      <ul class="premises">
+        <li style="animation-delay:0ms">
+          <span class="premises__num premises__num--pink">1</span>
+          <div>
+            <h3>Jornada de upsell</h3>
+            <p>Momento da jornada é diferente da FastStore AI Native: cliente geralmente já tem uma arquitetura na VTEX e possivelmente uma frente de loja no ecommerce.</p>
+          </div>
+        </li>
+        <li style="animation-delay:90ms">
+          <span class="premises__num premises__num--ink">2</span>
+          <div>
+            <h3>Persona do fluxo de composição</h3>
+            <p>A persona construindo nesse cenário não é necessariamente um dev — geralmente é um champion buscando novas receitas ou redução de custos por meio de assisted sales + VTEX.</p>
+          </div>
+        </li>
+        <li style="animation-delay:180ms">
+          <span class="premises__num premises__num--mint">3</span>
+          <div>
+            <h3>Objetivo da venda assistida</h3>
+            <p>Digitalizar a operação de venda assistida continua sendo uma aposta: o investimento e a prioridade só vêm com evidências, nem sempre é uma operação já madura.</p>
+          </div>
+        </li>
+      </ul>
     </div>
     <footer class="foot"><span>AI Native para Venda Assistida</span><span class="foot__num">05</span></footer>
   </section>
@@ -144,20 +140,55 @@
     <footer class="foot"><span>AI Native para Venda Assistida</span><span class="foot__num">06</span></footer>
   </section>
 
-  <!-- ============ SLIDE 7 — O CASO: CAIXA MÓVEL ============ -->
+  <!-- ============ SLIDE 7 — COMO FUNCIONA ============ -->
   <section class="slide slide--light" data-slide="7">
     <div class="slide__inner">
-      <p class="eyebrow eyebrow--pink">06 · Jornada construída — Caixa Móvel</p>
+      <p class="eyebrow eyebrow--pink">06 · Como funciona</p>
+      <h2 class="display">Da necessidade de negócio à jornada publicada.</h2>
+      <div class="steps">
+        <div class="step" style="animation-delay:0ms">
+          <span class="step__num step__num--pink">1</span>
+          <h3>Stakeholder da Americanas descreve</h3>
+          <p class="step__quote">“Preciso tirar o shopper da fila e fechar a venda no celular.”</p>
+          <p class="step__meta">Linguagem natural, no editor visual.</p>
+        </div>
+        <div class="step__arrow" aria-hidden="true">→</div>
+        <div class="step" style="animation-delay:120ms">
+          <span class="step__num step__num--ink">2</span>
+          <h3>O agente consulta o Reference Flow</h3>
+          <p class="step__quote">As regras da venda assistida: etapas, estados, condições, módulos.</p>
+          <p class="step__meta">O conhecimento que impede a IA de errar.</p>
+        </div>
+        <div class="step__arrow" aria-hidden="true">→</div>
+        <div class="step" style="animation-delay:240ms">
+          <span class="step__num step__num--mint">3</span>
+          <h3>Devolve um plano justificado e a experiência pronta</h3>
+          <p class="step__quote">Jornada mínima da Caixa Móvel, mandatório × opcional, onbrand.</p>
+          <p class="step__meta">Americanas ajusta e publica.</p>
+        </div>
+      </div>
+      <div class="hero-strip">
+        <div class="hero-strip__icon">★</div>
+        <p><strong>O Reference Flow é o herói invisível.</strong><br> É a regra que garante que a IA nunca esqueça um estado de loading, nem pule a nota fiscal, nem gere uma tela a mais do que a Caixa Móvel precisa.</p>
+      </div>
+    </div>
+    <footer class="foot"><span>AI Native para Venda Assistida</span><span class="foot__num">07</span></footer>
+  </section>
+
+  <!-- ============ SLIDE 8 — O CASO: CAIXA MÓVEL ============ -->
+  <section class="slide slide--light" data-slide="8">
+    <div class="slide__inner">
+      <p class="eyebrow eyebrow--pink">07 · Jornada construída — Caixa Móvel</p>
       <h2 class="display">Do cliente na loja à nota fiscal na mão.</h2>
       <div class="journey-flow">
         <div class="journey-row">
-          <div class="journey-step" style="animation-delay:0ms"><span class="journey-step__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 11-1 9"/><path d="m19 11-4-7"/><path d="M2 11h20"/><path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"/><path d="M4.5 15.5h15"/><path d="m5 11 4-7"/><path d="m9 11 1 9"/></svg></span><span class="journey-step__num">01</span><p class="journey-step__title">Cliente chega com itens soltos ou dúvidas</p></div>
+          <div class="journey-step" style="animation-delay:0ms"><span class="journey-step__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 11-1 9"/><path d="m19 11-4-7"/><path d="M2 11h20"/><path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"/><path d="M4.5 15.5h15"/><path d="m5 11 4-7"/><path d="m9 11 1 9"/></svg></span><span class="journey-step__num">01</span><p class="journey-step__title">Cliente chega com itens ou dúvidas</p></div>
           <div class="journey-arrow" aria-hidden="true">⇢</div>
-          <div class="journey-step" style="animation-delay:90ms"><span class="journey-step__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></span><span class="journey-step__num">02</span><p class="journey-step__title">Operador abre a jornada assistida</p></div>
+          <div class="journey-step" style="animation-delay:90ms"><span class="journey-step__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></span><span class="journey-step__num">02</span><p class="journey-step__title">Operador abre a solução de venda assistida</p></div>
           <div class="journey-arrow" aria-hidden="true">⇢</div>
-          <div class="journey-step" style="animation-delay:180ms"><span class="journey-step__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></svg></span><span class="journey-step__num">03</span><p class="journey-step__title">Busca produtos no catálogo VTEX</p></div>
+          <div class="journey-step" style="animation-delay:180ms"><span class="journey-step__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></svg></span><span class="journey-step__num">03</span><p class="journey-step__title">Scanneia ou busca produtos no catálogo VTEX</p></div>
           <div class="journey-arrow" aria-hidden="true">⇢</div>
-          <div class="journey-step" style="animation-delay:270ms"><span class="journey-step__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 16H8"/><path d="M14 8H8"/><path d="M16 12H8"/><path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"/></svg></span><span class="journey-step__num">04</span><p class="journey-step__title">Cliente define quantidade e dados da nota</p></div>
+          <div class="journey-step" style="animation-delay:270ms"><span class="journey-step__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 16H8"/><path d="M14 8H8"/><path d="M16 12H8"/><path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"/></svg></span><span class="journey-step__num">04</span><p class="journey-step__title">Cliente confere o carrinho e operador identifica o cliente, se ele quiser</p></div>
         </div>
         <div class="journey-wrap" aria-hidden="true">
           <span class="journey-wrap__arrow-glyph">⇢</span>
@@ -167,19 +198,19 @@
           <div class="journey-arrow" aria-hidden="true">⇠</div>
           <div class="journey-step" style="animation-delay:540ms"><span class="journey-step__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/><path d="m16 19 2 2 4-4"/></svg></span><span class="journey-step__num">07</span><p class="journey-step__title">Nota fiscal gerada e enviada — e-mail/SMS</p></div>
           <div class="journey-arrow" aria-hidden="true">⇠</div>
-          <div class="journey-step" style="animation-delay:450ms"><span class="journey-step__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.748 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4.875"/><path d="m16 19 2 2 4-4"/><path d="M18 12h.01"/><path d="M6 12h.01"/><circle cx="12" cy="12" r="2"/></svg></span><span class="journey-step__num">06</span><p class="journey-step__title">Pagamento processado via gateway</p></div>
+          <div class="journey-step" style="animation-delay:450ms"><span class="journey-step__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.748 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4.875"/><path d="m16 19 2 2 4-4"/><path d="M18 12h.01"/><path d="M6 12h.01"/><circle cx="12" cy="12" r="2"/></svg></span><span class="journey-step__num">06</span><p class="journey-step__title">Pagamento processado (integração com gateway)</p></div>
           <div class="journey-arrow" aria-hidden="true">⇠</div>
           <div class="journey-step" style="animation-delay:360ms"><span class="journey-step__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg></span><span class="journey-step__num">05</span><p class="journey-step__title">Cliente escolhe o pagamento — Pix, cartão etc.</p></div>
         </div>
       </div>
     </div>
-    <footer class="foot"><span>AI Native para Venda Assistida</span><span class="foot__num">07</span></footer>
+    <footer class="foot"><span>AI Native para Venda Assistida</span><span class="foot__num">08</span></footer>
   </section>
 
-  <!-- ============ SLIDE 8 — TEMPO ESPERADO ============ -->
-  <section class="slide slide--dark" data-slide="8">
+  <!-- ============ SLIDE 9 — TEMPO ESPERADO ============ -->
+  <section class="slide slide--dark" data-slide="9">
     <div class="slide__inner">
-      <p class="eyebrow eyebrow--pink">07 · Tempo esperado</p>
+      <p class="eyebrow eyebrow--pink">08 · Tempo esperado</p>
       <h2 class="display display--light">Até 75% menos tempo por atendimento.</h2>
       <div class="versus">
         <div class="way way--old">
@@ -197,13 +228,13 @@
         </div>
       </div>
     </div>
-    <footer class="foot foot--dark"><span></span><span class="foot__num">08</span></footer>
+    <footer class="foot foot--dark"><span></span><span class="foot__num">09</span></footer>
   </section>
 
-  <!-- ============ SLIDE 9 — POR QUE É FACTÍVEL ============ -->
-  <section class="slide slide--dark" data-slide="9">
+  <!-- ============ SLIDE 10 — POR QUE É FACTÍVEL ============ -->
+  <section class="slide slide--dark" data-slide="10">
     <div class="slide__inner">
-      <p class="eyebrow eyebrow--pink">08 · Por que é factível</p>
+      <p class="eyebrow eyebrow--pink">09 · Por que é factível</p>
       <h2 class="display display--light">Não é vapor. Três pilares já estão de pé.</h2>
       <div class="pillars">
         <div class="pillar">
@@ -224,14 +255,14 @@
       </div>
       <p class="anchor anchor--center anchor--sm">Codificar conhecimento que já temos — não apostar num salto no escuro.</p>
     </div>
-    <footer class="foot foot--dark"><span></span><span class="foot__num">09</span></footer>
+    <footer class="foot foot--dark"><span></span><span class="foot__num">10</span></footer>
   </section>
 
-  <!-- ============ SLIDE 10 — A APOSTA ============ -->
-  <section class="slide slide--dark slide--closer" data-slide="10">
+  <!-- ============ SLIDE 11 — A APOSTA ============ -->
+  <section class="slide slide--dark slide--closer" data-slide="11">
     <div class="gen-field gen-field--left" aria-hidden="true"></div>
     <div class="slide__inner slide__inner--right">
-      <p class="eyebrow eyebrow--pink">09 · A aposta</p>
+      <p class="eyebrow eyebrow--pink">10 · A aposta</p>
       <h2 class="display display--light closer-title">A Caixa Móvel hoje. Qualquer jornada assistida amanhã — em minutos.</h2>
       <p class="body body--light">Na mesma esteira do FastStore. Sem código. Com a marca do cliente.</p>
       <div class="ask">
@@ -239,7 +270,7 @@
         <p class="ask__text">O que pedimos: buy-in na visão para levar o Reference Flow do discovery ao primeiro protótipo real — começando pela Caixa Móvel.</p>
       </div>
     </div>
-    <footer class="foot foot--dark"><span></span><span class="foot__num">10</span></footer>
+    <footer class="foot foot--dark"><span></span><span class="foot__num">11</span></footer>
   </section>
 
 </div>
@@ -247,7 +278,7 @@
 <!-- NAV -->
 <nav class="nav" aria-label="Navegação de slides">
   <button class="nav__btn" id="prev" aria-label="Slide anterior">←</button>
-  <span class="nav__counter"><span id="cur">1</span> / <span id="total">10</span></span>
+  <span class="nav__counter"><span id="cur">1</span> / <span id="total">11</span></span>
   <button class="nav__btn" id="next" aria-label="Próximo slide">→</button>
   <button class="nav__btn nav__btn--full" id="fs" aria-label="Tela cheia">⛶</button>
 </nav>
